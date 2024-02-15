@@ -1,11 +1,17 @@
-require ('dotenv'). config({ path : './env'})
-
+// require ('dotenv'). config({ path : './env'})
+import dotenv from "dotenv"
 
 import connectDB from "./db/index.js";
 // import { configDotenv } from "dotenv";
+dotenv.config({
+    path: './.env'
+})
 
 
-connectDB();
+connectDB()
+
+
+
 
 /*( async () => {
     try {
